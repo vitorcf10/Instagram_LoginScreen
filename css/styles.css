@@ -140,3 +140,43 @@ body{
     position: relative;
     font-size: 1.2rem;
 }
+
+.or-divider::before,
+.or-divider::after{
+    content: "";
+    display: block;
+    width: 11rem;
+    height: 0.1rem;
+    position: absolute;
+    background: rgba(var(--border-color), 0.4);
+    top: 50%;
+}
+
+.or-divider::before{
+    left: 3rem;
+}
+
+.or-divider::after{
+    left: 3rem;
+}
+
+/* Log in with Facebook */
+.fb-login{
+    margin: 1.5rem 0;
+}
+
+.fb-login img,
+.fb-login span{
+    vertical-align: middle;
+}
+
+.fb-login img{
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.fb-login span{
+    font-size: 1.3rem;
+    color: var(--fb-logo);
+    font-weight: 700;
+}
